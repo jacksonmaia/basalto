@@ -1,0 +1,7 @@
+RewriteCond %{HTTP_HOST} ^(www.)?basaltoengenharia.com$
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-dFuncionando
+RewriteRule ^(.*)$ /public/$1
+RewriteCond %{HTTP_HOST} ^(www.)?basaltoengenharia.com$
+RewriteRule ^(/)?$ pasta/ [L]
