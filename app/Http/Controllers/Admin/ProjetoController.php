@@ -23,7 +23,8 @@ class ProjetoController extends Controller
 
     $rules = [
       'titulo'=> 'required',
-      'descricao'=> 'required'
+      'descricao'=> 'required',
+      'imagem1'=> 'required'
     ];
 
       if($req->hasFile('imagem1')){
